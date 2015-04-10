@@ -1,0 +1,13 @@
+<h1>Welcome to the Capital Game!</h1>
+<p>Hope you get a perfect score!</p>
+
+<p>What is the capital of <%= @state %>?</p>
+<form action="/make_answer">
+  <input type="text" name="user_guess" />
+  <input type="hidden" name="state" value="<%= @state %>" />
+  <input type="submit" value="Guess!" />
+</form>
+
+<pre>
+  <%= params.inspect() %>
+</pre>
