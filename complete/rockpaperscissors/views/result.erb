@@ -1,0 +1,13 @@
+<% if @result == :won %>
+  <h1>You won!</h1>
+<% elsif @result == :lost %>
+  <h1>You lost.</h1>
+<% elsif @result == :tie %>
+  <h1>You tied.</h1>
+<% end %>
+<p>
+Computer played: <b><%= @computer %></b>
+</p>
+<p>
+You played: <b><%= @user %></b>
+</p>
