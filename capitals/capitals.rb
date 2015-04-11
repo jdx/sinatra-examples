@@ -13,6 +13,7 @@ get '/' do
 end
 
 get '/make_answer' do
+  puts params.inspect # useful for debugging
   city = params[:city]
   state = params[:state]
   if capitals[state] == city
