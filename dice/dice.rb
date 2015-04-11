@@ -5,6 +5,7 @@ get '/' do
 end
 
 get '/dice_roll' do
-  roll = rand(1..6)
-  "<h1>your</h1> roll: <b>#{roll}</b>"
+  @user_roll = rand(1..6)
+  @comp_roll = rand(1..6)
+  erb :roll
 end

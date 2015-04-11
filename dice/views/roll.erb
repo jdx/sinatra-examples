@@ -1,0 +1,13 @@
+<p>
+  your roll: <b><%= @user_roll %> </b>
+</p>
+<p>
+  comp roll: <b><%= @comp_roll %> </b>
+</p>
+<% if @user_roll > @comp_roll %>
+<h2>You won!</h2>
+<% elsif @comp_roll > @user_roll %>
+<h2>You lost.</h2>
+<% else %>
+<h2>You tied.</h2>
+<% end %>
